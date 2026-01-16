@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="HummingHai - Smart DJ Beat-Queuing System for iOS. Automatic BPM detection, intelligent track sequencing, and seamless mix preparation.">
+    <meta name="keywords" content="DJ app, iOS, beat matching, BPM detection, auto DJ, music mixing, SoundCloud">
+    <meta name="author" content="HummingHai">
+    
+    <!-- Open Graph / Social -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://sharkbln.github.io/AURALiS/">
+    <meta property="og:title" content="HummingHai - Smart DJ Beat-Queuing">
+    <meta property="og:description" content="Intelligent DJ companion app with automatic BPM detection and seamless track sequencing.">
+    <meta property="og:image" content="assets/og-image.png">
+    
+    <title>HummingHai - Smart DJ Beat-Queuing System</title>
+    
+    <link rel="icon" type="image/png" href="assets/favicon.png">
+    <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Animated Background -->
+    <div class="bg-gradient"></div>
+    <div class="bg-orbs">
+        <div class="orb orb-1"></div>
+        <div class="orb orb-2"></div>
+        <div class="orb orb-3"></div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="nav glass-surface">
+        <div class="nav-content">
+            <a href="#" class="logo">
+                <img src="assets/logo.svg" alt="HummingHai" class="logo-icon">
+                <span class="logo-text">HummingHai</span>
+            </a>
+            <div class="nav-links">
+                <a href="#features">Features</a>
+                <a href="#how-it-works">How It Works</a>
+                <a href="#integrations">Integrations</a>
+                <a href="mailto:contact@humminghai.app" class="btn btn-secondary">Contact</a>
+            </div>
+            <button class="mobile-menu-btn" aria-label="Menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero">
+        <div class="hero-content">
+            <div class="hero-badge glass-surface">
+                <span class="badge-icon">🎵</span>
+                <span>iOS App for DJs</span>
+            </div>
+            <h1 class="hero-title">
+                Smart <span class="gradient-text">Beat-Queuing</span><br>
+                for Your Next Mix
+            </h1>
+            <p class="hero-subtitle">
+                HummingHai analyzes your tracks, detects BPM and beat positions, 
+                and helps you prepare the perfect DJ set with intelligent track sequencing.
+            </p>
+            <div class="hero-cta">
+                <a href="#features" class="btn btn-primary">
+                    <span>Explore Features</span>
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                        <path d="M10 3L17 10L10 17M17 10H3" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </a>
+                <a href="#how-it-works" class="btn btn-ghost">Learn More</a>
+            </div>
+        </div>
+        <div class="hero-visual">
+            <div class="phone-mockup glass-surface">
+                <div class="phone-screen">
+                    <div class="app-preview">
+                        <!-- Deck A -->
+                        <div class="deck deck-a">
+                            <div class="deck-header">
+                                <span class="deck-label">A</span>
+                                <span class="deck-status active">PLAYING</span>
+                            </div>
+                            <div class="waveform">
+                                <div class="waveform-bars">
+                                    <span style="--h: 60%"></span>
+                                    <span style="--h: 80%"></span>
+                                    <span style="--h: 45%"></span>
+                                    <span style="--h: 95%"></span>
+                                    <span style="--h: 70%"></span>
+                                    <span style="--h: 85%"></span>
+                                    <span style="--h: 50%"></span>
+                                    <span style="--h: 90%"></span>
+                                    <span style="--h: 65%"></span>
+                                    <span style="--h: 75%"></span>
+                                    <span style="--h: 55%"></span>
+                                    <span style="--h: 88%"></span>
+                                </div>
+                                <div class="playhead"></div>
+                            </div>
+                            <div class="track-info">
+                                <span class="track-name">Summer Vibes</span>
+                                <span class="track-bpm">124 BPM</span>
+                            </div>
+                        </div>
+                        <!-- Deck B -->
+                        <div class="deck deck-b">
+                            <div class="deck-header">
+                                <span class="deck-label">B</span>
+                                <span class="deck-status">READY</span>
+                            </div>
+                            <div class="waveform waveform-b">
+                                <div class="waveform-bars">
+                                    <span style="--h: 70%"></span>
+                                    <span style="--h: 55%"></span>
+                                    <span style="--h: 85%"></span>
+                                    <span style="--h: 60%"></span>
+                                    <span style="--h: 92%"></span>
+                                    <span style="--h: 48%"></span>
+                                    <span style="--h: 78%"></span>
+                                    <span style="--h: 65%"></span>
+                                    <span style="--h: 88%"></span>
+                                    <span style="--h: 52%"></span>
+                                    <span style="--h: 75%"></span>
+                                    <span style="--h: 68%"></span>
+                                </div>
+                            </div>
+                            <div class="track-info">
+                                <span class="track-name">Night Drive</span>
+                                <span class="track-bpm">126 BPM</span>
+                            </div>
+                        </div>
+                        <!-- BPM Match Badge -->
+                        <div class="bpm-match">
+                            <span class="match-icon">✓</span>
+                            <span>BPM Compatible</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Features Section -->
+    <section id="features" class="section features">
+        <div class="section-header">
+            <span class="section-badge">Features</span>
+            <h2 class="section-title">Everything You Need<br>for Seamless Mixing</h2>
+            <p class="section-subtitle">
+                Professional-grade audio analysis meets intuitive design
+            </p>
+        </div>
+        
+        <div class="features-grid">
+            <div class="feature-card glass-surface">
+                <div class="feature-icon" style="--accent: var(--accent-primary)">
+                    <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
+                        <path d="M4 16C4 16 8 8 16 8C24 8 28 16 28 16C28 16 24 24 16 24C8 24 4 16 4 16Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        <circle cx="16" cy="16" r="4" stroke="currentColor" stroke-width="2"/>
+                    </svg>
+                </div>
+                <h3>Automatic BPM Detection</h3>
+                <p>Advanced algorithms analyze your tracks and detect tempo with high precision, from 60 to 200 BPM.</p>
+            </div>
+            
+            <div class="feature-card glass-surface">
+                <div class="feature-icon" style="--accent: var(--accent-secondary)">
+                    <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
+                        <path d="M16 4V28M8 8L16 4L24 8M8 24L16 28L24 24" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        <circle cx="16" cy="16" r="6" stroke="currentColor" stroke-width="2"/>
+                    </svg>
+                </div>
+                <h3>Beat Grid Alignment</h3>
+                <p>Precise beat tracking creates an accurate beat grid, making it easy to align tracks for perfect transitions.</p>
+            </div>
+            
+            <div class="feature-card glass-surface">
+                <div class="feature-icon" style="--accent: var(--accent-success)">
+                    <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
+                        <path d="M6 16H26M6 8H26M6 24H18" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                        <path d="M22 22L26 26M26 22L22 26" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                    </svg>
+                </div>
+                <h3>Smart Track Queue</h3>
+                <p>Intelligent sorting by BPM, energy, and musical key helps you build sets that flow naturally.</p>
+            </div>
+            
+            <div class="feature-card glass-surface">
+                <div class="feature-icon" style="--accent: var(--accent-warning)">
+                    <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
+                        <rect x="4" y="8" width="10" height="16" rx="2" stroke="currentColor" stroke-width="2"/>
+                        <rect x="18" y="8" width="10" height="16" rx="2" stroke="currentColor" stroke-width="2"/>
+                        <path d="M9 4V8M23 4V8M9 24V28M23 24V28" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                    </svg>
+                </div>
+                <h3>Dual Deck View</h3>
+                <p>Side-by-side deck display shows currently playing and upcoming tracks with real-time waveforms.</p>
+            </div>
+            
+            <div class="feature-card glass-surface">
+                <div class="feature-icon" style="--accent: #ff6b9d">
+                    <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
+                        <path d="M16 4L20 12L28 13L22 19L24 28L16 24L8 28L10 19L4 13L12 12L16 4Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </div>
+                <h3>Auto DJ Mode</h3>
+                <p>One-button operation imports, analyzes, and sequences your tracks for effortless set preparation.</p>
+            </div>
+            
+            <div class="feature-card glass-surface">
+                <div class="feature-icon" style="--accent: #00d4aa">
+                    <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
+                        <path d="M4 8L16 4L28 8V18C28 23 22 27 16 28C10 27 4 23 4 18V8Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M12 16L15 19L21 13" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </div>
+                <h3>Confidence Indicators</h3>
+                <p>Visual cue state indicators show analysis confidence, so you know which tracks need manual attention.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works -->
+    <section id="how-it-works" class="section how-it-works">
+        <div class="section-header">
+            <span class="section-badge">How It Works</span>
+            <h2 class="section-title">From Import to<br>Perfect Mix</h2>
+        </div>
+        
+        <div class="steps">
+            <div class="step">
+                <div class="step-number glass-surface">1</div>
+                <div class="step-content">
+                    <h3>Import Your Tracks</h3>
+                    <p>Add tracks from your library or stream from SoundCloud. HummingHai supports all common audio formats.</p>
+                </div>
+            </div>
+            
+            <div class="step">
+                <div class="step-number glass-surface">2</div>
+                <div class="step-content">
+                    <h3>Automatic Analysis</h3>
+                    <p>Our audio engine detects BPM, beat positions, downbeats, and energy levels for each track.</p>
+                </div>
+            </div>
+            
+            <div class="step">
+                <div class="step-number glass-surface">3</div>
+                <div class="step-content">
+                    <h3>Smart Sequencing</h3>
+                    <p>Tracks are intelligently sorted by tempo and energy to create natural progressions.</p>
+                </div>
+            </div>
+            
+            <div class="step">
+                <div class="step-number glass-surface">4</div>
+                <div class="step-content">
+                    <h3>Preview & Refine</h3>
+                    <p>Use the dual deck view to preview transitions and adjust cue points if needed.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Integrations -->
+    <section id="integrations" class="section integrations">
+        <div class="integration-card glass-surface">
+            <div class="integration-content">
+                <div class="integration-logo soundcloud">
+                    <svg width="48" height="48" viewBox="0 0 48 48" fill="currentColor">
+                        <path d="M42 28.5c0 2.485-2.015 4.5-4.5 4.5H24V18c1.5-.9 3.15-1.5 5-1.5 5.25 0 9.5 4.25 9.5 9.5 0 .85-.15 1.65-.35 2.45.45-.1.9-.15 1.35-.15 1.4 0 2.5 1.1 2.5 2.5v-.3z"/>
+                        <path d="M6 27v6h2v-6H6zm4-3v9h2v-9h-2zm4-2v11h2V22h-2zm4-4v15h2V18h-2z"/>
+                    </svg>
+                </div>
+                <div class="integration-text">
+                    <h3>SoundCloud Integration</h3>
+                    <p>Connect your SoundCloud account to import playlists and stream tracks directly into HummingHai. Browse your likes, playlists, and discover new music without leaving the app.</p>
+                </div>
+            </div>
+            <div class="integration-features">
+                <div class="int-feature">
+                    <span class="check">✓</span>
+                    <span>Import playlists</span>
+                </div>
+                <div class="int-feature">
+                    <span class="check">✓</span>
+                    <span>Stream tracks</span>
+                </div>
+                <div class="int-feature">
+                    <span class="check">✓</span>
+                    <span>Browse your library</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Design Section -->
+    <section class="section design">
+        <div class="design-content">
+            <div class="design-text">
+                <span class="section-badge">Design</span>
+                <h2>Built for iOS 26</h2>
+                <p>HummingHai features a stunning glass/aqua design system that feels right at home on the latest iOS. Every element is crafted with attention to detail, from subtle animations to the premium dark aesthetic.</p>
+                <ul class="design-features">
+                    <li>
+                        <span class="check-circle">✓</span>
+                        Translucent glass surfaces
+                    </li>
+                    <li>
+                        <span class="check-circle">✓</span>
+                        Smooth spring animations
+                    </li>
+                    <li>
+                        <span class="check-circle">✓</span>
+                        Dynamic glow effects
+                    </li>
+                    <li>
+                        <span class="check-circle">✓</span>
+                        Adaptive layouts
+                    </li>
+                </ul>
+            </div>
+            <div class="design-visual">
+                <div class="color-palette">
+                    <div class="color-swatch" style="--color: #66b3ff" title="Accent Primary"></div>
+                    <div class="color-swatch" style="--color: #9966ff" title="Accent Secondary"></div>
+                    <div class="color-swatch" style="--color: #4de69a" title="Success"></div>
+                    <div class="color-swatch" style="--color: #ffb34d" title="Warning"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="section cta">
+        <div class="cta-content glass-surface">
+            <h2>Ready to Elevate Your DJ Sets?</h2>
+            <p>HummingHai is currently in development. Stay tuned for updates.</p>
+            <div class="cta-buttons">
+                <a href="#" class="btn btn-primary" target="_blank" rel="noopener">
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor">
+                        <path fill-rule="evenodd" d="M10 0C4.477 0 0 4.477 0 10c0 4.42 2.865 8.166 6.839 9.489.5.092.682-.217.682-.482 0-.237-.008-.866-.013-1.7-2.782.604-3.369-1.34-3.369-1.34-.454-1.156-1.11-1.464-1.11-1.464-.908-.62.069-.608.069-.608 1.003.07 1.531 1.03 1.531 1.03.892 1.529 2.341 1.087 2.91.831.092-.646.35-1.086.636-1.336-2.22-.253-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.029-2.683-.103-.253-.446-1.27.098-2.647 0 0 .84-.269 2.75 1.025A9.564 9.564 0 0110 4.844c.85.004 1.705.115 2.504.337 1.909-1.294 2.747-1.025 2.747-1.025.546 1.377.203 2.394.1 2.647.64.699 1.028 1.592 1.028 2.683 0 3.842-2.339 4.687-4.566 4.935.359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.743 0 .267.18.578.688.48C17.137 18.163 20 14.418 20 10c0-5.523-4.477-10-10-10z"/>
+                    </svg>
+                    <span>Coming Soon</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-brand">
+                <img src="assets/logo.svg" alt="HummingHai" class="footer-logo">
+                <span>HummingHai</span>
+            </div>
+            <div class="footer-links">
+                <a href="#" target="_blank" rel="noopener">GitHub</a>
+                <a href="privacy.html">Privacy</a>
+                <a href="mailto:contact@humminghai.app">Contact</a>
+            </div>
+            <p class="footer-copy">© 2026 HummingHai. Made with ♥ for DJs.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

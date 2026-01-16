@@ -1,0 +1,42 @@
+<svg width="512" height="512" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#66b3ff"/>
+      <stop offset="100%" style="stop-color:#9966ff"/>
+    </linearGradient>
+    <linearGradient id="waveGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#ffffff"/>
+      <stop offset="100%" style="stop-color:rgba(255,255,255,0.8)"/>
+    </linearGradient>
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="8" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  
+  <!-- Background Circle -->
+  <circle cx="256" cy="256" r="240" fill="url(#bgGrad)"/>
+  
+  <!-- Inner Glow Circle -->
+  <circle cx="256" cy="256" r="200" fill="none" stroke="rgba(255,255,255,0.2)" stroke-width="2"/>
+  
+  <!-- Stylized H from sound waves -->
+  <g filter="url(#glow)">
+    <!-- Left wave bars forming left side of H -->
+    <rect x="140" y="160" width="20" height="192" rx="10" fill="white"/>
+    
+    <!-- Right wave bars forming right side of H -->
+    <rect x="352" y="160" width="20" height="192" rx="10" fill="white"/>
+    
+    <!-- Middle crossbar as waveform -->
+    <path d="M160 256 Q180 220, 200 256 Q220 292, 240 256 Q260 220, 280 256 Q300 292, 320 256 Q340 220, 352 256" 
+          stroke="white" stroke-width="16" stroke-linecap="round" fill="none"/>
+  </g>
+  
+  <!-- Decorative beats -->
+  <circle cx="256" cy="140" r="8" fill="rgba(255,255,255,0.6)"/>
+  <circle cx="256" cy="372" r="8" fill="rgba(255,255,255,0.6)"/>
+</svg>
