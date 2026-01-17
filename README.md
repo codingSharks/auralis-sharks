@@ -4,7 +4,7 @@ A music discovery and listening companion app for iOS.
 
 ## Website
 
-🌐 **https://sharkbln.github.io/auralis-sharks/**
+🌐 **https://codingsharks.github.io/auralis-sharks/**
 
 ## SoundCloud Integration
 
@@ -27,7 +27,7 @@ This application adheres to the [SoundCloud API Terms of Use](https://developers
 
 ## Privacy Policy
 
-📄 **https://sharkbln.github.io/auralis-sharks/privacy.html**
+📄 **https://codingsharks.github.io/auralis-sharks/privacy.html**
 
 User data is handled with care:
 - No server-side data storage
